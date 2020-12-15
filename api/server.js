@@ -7,7 +7,7 @@ const server = express();
 
 const KnexSessionStore = require('connect-session-knex')(session);
 const usersRouter = require('./users/users-router.js');
-const authRouter = require('./auth/auth-router.js');
+const authRouter = require('./auth/auth-router');
 
 const config = {
   name: 'sessionId', // the default would be sid, but that would reveal our stack
